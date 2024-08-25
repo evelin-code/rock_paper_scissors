@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PLAYER</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>PLAYERsd</h1>
+    <form id="user-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="choice" value="scissors" required>
+                <img src="./resources/scissors.webp" alt="tijeras">
+            </label>
+            <label>
+                <input type="radio" name="choice" value="paper" required>
+                <img src="./resources/sheet.png" alt="papel">
+            </label>
+            <label>
+                <input type="radio" name="choice" value="rock" required>
+                <img src="./resources/rock.webp" alt="piedra">
+            </label>
+        </div>
+        <button type="submit">Create User</button>
+    </form>
+
+    <div id="data-container"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
